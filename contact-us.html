@@ -3,11 +3,12 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Contact :: NAHR Al Ahmar General Trading LLC : Dubai UAE</title>
+    <title>Contact :: ADORN TRADING WLL : Dubai UAE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="NAHR General Trading FZC is a UAE, based General Trading Company. With partners, contributors, associates who are Manufacturers, Exporters, Importers and Traders, started operations in UAE which is a fast growing market and a trading hub. ">
     <meta name="author" content="Weblanza">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- LOAD CSS FILES -->
     <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
@@ -31,17 +32,11 @@
                     </div>
                     <div class="col-md-9">
                         <!-- mainmenu begin -->
-                        <nav id="mainmenu-container">
+                        <nav id="mainmenu-container" style="width:650px";>
                             <ul id="mainmenu">
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="#">About Us</a>
-                                	<ul>
-                                    	<li><a href="about-us.html">About The Company</a></li>
-                                        <li><a href="vision-and-mission.html">Vision & Mission</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="products.html">Product Categories</a></li>
-                                <li><a href="services.html">Services</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="vision-and-mission.html">Vision & Mission</a></li>
                                 <li><a href="work-team.html">Our Team</a></li>
                                 <li><a href="contact-us.html">Contact Us</a></li>
                                 <!--<li><a href="quality.php">Quality</a></li>-->
@@ -85,13 +80,13 @@
                 <div class="row no-gutter">
                     <div class="col-md-6">
                         <div id="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.5557777499585!2d55.27674461500988!3d25.218199083886443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDEzJzA1LjUiTiA1NcKwMTYnNDQuMiJF!5e0!3m2!1sen!2s!4v1483498509973" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.868478945415!2d51.53584351501106!3d25.275009383860077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45c567db0feafb%3A0x5a27b91da6ec35e9!2sCity%20Gym%20Najma!5e0!3m2!1sen!2sqa!4v1632123928493!5m2!1sen!2sqa" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div id="contact-form-wrapper">
                             <div class="contact_form_holder">
-                                <form id="contact" class="row" name="form1" method="post" action="">
+                                <form id="submit-form" class="row" name="form1" action="">
                                     <input type="text" class="form-control" name="name" id="name" placeholder="Your name" />
 									<div id="error_no" class="error">Please check your Contact Number</div>
                                     <input type="text" class="form-control" name="no" id="no" placeholder="Your Contact Number" />
@@ -106,34 +101,53 @@
                                     </p>
                                 </form>
                             </div>
+                            <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbwATNRJHOqcHCWKVc6gIgh1bOqT4QfeArkcBeiZfg/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
                         </div>
                     </div>
                 </div>
                 <div class="divider-line"></div>
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h2 class="wow fadeInUp" data-wow-delay=".5s" data-wow-duration=".8s">NAHR Al Ahmar General Trading LLC
+                        <h2 class="wow fadeInUp" data-wow-delay=".5s" data-wow-duration=".8s">Adorn trading WLL
                         </h2>
                         <div class="small-border wow flipInY" data-wow-delay=".8s" data-wow-duration=".8s"></div>
                     </div>
                     <div class="col-md-3">
                         <h3 style="font-size:16px;">
-                       Office 606, Single Business Tower, Sheikh Zayed Road, Business Bay, Dubai , <br>United Arab Emirates</h3>
+                       HBG Building Building no: 71 Office No : 604 (6th floor) Area : Najma (B Ring Road) Zone : 26 Road  : 220<br>United Arab Emirates</h3>
                         <div class="divider-single"></div>
                     </div>
                     <div class="col-md-3">
                         <h3 style="font-size:16px;">Email : <br>
- sales@nahrtrading.com</h3>
+ office@adorntrading.com</h3>
                         <div class="divider-single"></div>
                     </div>
                     <div class="col-md-3">
                         <h3 style="font-size:16px;">Phone :<br>
-(+971) 4 3303020 </h3>
++974 30669086 </h3>
                         <div class="divider-single"></div>
                     </div>
                     <div class="col-md-3">
                         <h3 style="font-size:16px;">Cell :<br>
-(+971)  50 4820071</h3>
++974 30669086 </h3>
                         <div class="divider-single"></div>
                     </div>
                 </div>
@@ -144,23 +158,22 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <h3>Field of Trading</h3>
+                        <h3>Important Links</h3>
                         <div class="tiny-border"></div>
                         <ul>
-                            <li><a href="services.html">Non Alcoholic Beverages</a></li>
-                            <li><a href="services.html">Food & Confectioneries</a></li>
-                            <li><a href="services.html">Watches and Luxury accessories</a></li>
-                            <li><a href="services.html">Building Materials</a></li>
-                            <li><a href="services.html">Apparels</a></li>
-                            <li><a href="services.html">Suitcases and Bags</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="vision-and-mission.html">Mission & Vision</a></li>
+                            <li><a href="work-team.html">Our Work Team</a></li>
+                            <li><a href="contact-us.html">Contact</a></li>
+                            
                         </ul>
                     </div>
                     <div class="col-md-4">
                         <h3>Location</h3>
                         <div class="tiny-border"></div>
-                        NAHR Al Ahmar General Trading LLC<br>
-                       Office 606, Single Business Tower, Sheikh Zayed Road, Business Bay, Dubai , United Arab Emirates<br>
-                        Email. <a href="mailto:sales@nahrtrading.com">sales@nahrtrading.com</a><br>
+                        Adorn trading WLL <br>
+                       HBG Building Building no: 71 Office No : 604 (6th floor) Area : Najma (B Ring Road) Zone : 26 Road  : 220<br>
+                        Email. <a href="mailto:office@adorntrading.com">office@adorntrading.com</a><br>
                         <div class="divider-single"></div>
                         <div class="social-icons">
                             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -173,10 +186,7 @@
                     <div class="col-md-4">
                         <h3>About Us</h3>
                         <div class="tiny-border"></div>
-                        <p>The World of International Trade is changing rapidly. Market
-addition and consolidation, 24-hour express information - these and
-other forces create an ever-changing environment making it
-difficult for the time-honored or the so called traditional traders .</p>
+                        <p>ADORN TRADING is a reputed, professionally managed trading company with sound business ethics and prudence offering high quality products .</p>
                         <a href="about-us.html" class="btn-border-light">Read More</a>
                     </div>
                 </div>
@@ -186,7 +196,7 @@ difficult for the time-honored or the so called traditional traders .</p>
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <div class="spacer-single"></div>
-                        &copy; Copyright 2021 - NAHR Al Ahmar General Trading LLC &nbsp; | &nbsp; Powered by <a href="http://www.weblanza.com/" target="_blank">Weblanza</a>
+                        &copy; Copyright 2021 - Adorn Trading &nbsp; | &nbsp; Powered by <a href="index.html" target="_blank">Adorn</a>
                     </div>
                 </div>
             </div>
